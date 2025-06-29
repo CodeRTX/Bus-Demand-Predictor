@@ -1,0 +1,5 @@
+venv/
+__pycache__/
+*.pyc
+*.ipynb_checkpoints/
+models/*.pkl  # if you regenerate models locally but don't want to push big files
