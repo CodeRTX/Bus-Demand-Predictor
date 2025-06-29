@@ -10,35 +10,40 @@ Follow these steps to set up the environment, run the training script, and launc
 
 ###  prerequisites
 
-- python 3.8+
+- python 3.10.x
 - git
 
 ### 📦 1. Clone the Repository
 
 If the code is in a git repository, clone it to your local machine:
-bash
+```bash
 git clone <repository_url>
 cd <repository_name>
+```
 
 ### 🛠️ 2. Set up a Python Environment
 
 It's recommended to use a virtual environment to manage project dependencies.
 
 Using `venv`:
-bash
+```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows use `.venv\Scripts\activate`
+```
 
 Using `conda`:
-bash
-conda create -n bus_demand python=3.9
+```bash
+conda create -n bus_demand python=3.10.x
 conda activate bus_demand
+```
 
 ### 📦 3. Install Dependencies
 
 Install the required packages using the generated `requirements.txt` file:
 bash
+```
 pip install -r requirements.txt
+```
 
 ### 🧠 4. Run the Training Script
 
@@ -56,8 +61,9 @@ Upon successful execution of the notebook up to the cell that saves the model an
 ### 🌐 5. Run the Streamlit Application
 
 Once the model and encoder are saved, you can launch the Streamlit application. This app loads the saved artifacts and provides a simple web interface to make predictions based on user input.
-bash
+```bash
 streamlit run app.py
+```
 
 This command will open the Streamlit application in your web browser. You can then enter the date, source ID, destination ID, and the placeholder transaction-based features to get a demand prediction.
 
