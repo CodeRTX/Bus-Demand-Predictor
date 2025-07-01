@@ -53,7 +53,7 @@ Execute the notebook cells sequentially in your Jupyter environment (e.g., Colab
 
 Upon successful execution of the notebook up to the cell that saves the model and encoder, you should find the following files in the `./models` directory:
 
-- `lightgbm_model.joblib`
+- `lightgbm_model.pkl`
 - `city_encoder.joblib`
 
 ### 🌐 5. Run the Streamlit Application
