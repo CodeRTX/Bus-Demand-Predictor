@@ -260,10 +260,8 @@ exp1, exp2 = st.columns(2)
 with exp1:
     with st.expander("🤖 About the Model & Architecture"):
         st.markdown("""
-        This application uses a **LightGBM (Light Gradient Boosting Machine)** model, served via a **FastAPI** backend.
-        
-        - **Frontend:** An interactive Streamlit dashboard for user inputs.
-        - **Backend:** A high-performance FastAPI for model inference.
+        A unified **Streamlit application** serves as both the **Frontend** and **Backend**, enabling a seamless, lightweight workflow.
+        - **LightGBM** powers fast and scalable predictions, with Streamlit simplifying deployment—no external servers required.
         
         **Performance Highlights:**
         - **Best Model:** `LightGBM`
