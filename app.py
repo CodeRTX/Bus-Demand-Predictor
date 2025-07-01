@@ -100,7 +100,7 @@ load_css()
 
 # --- 2. Load Artifacts & Define Constants ---
 MODELS_DIR = './models'
-MODEL_PATH = os.path.join(MODELS_DIR, 'best_model.pkl')
+MODEL_PATH = os.path.join(MODELS_DIR, 'lightgbm_model.pkl')
 ENCODER_PATH = os.path.join(MODELS_DIR, 'city_encoder.joblib')
 
 @st.cache_resource
